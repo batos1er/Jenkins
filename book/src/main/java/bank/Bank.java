@@ -7,6 +7,9 @@ public class Bank {
     private List<Account> comptesList = new ArrayList<>();
 
 
+    public List<Account> getComptesList() {
+        return comptesList;
+    }
 
     public void addCompte(Account compte){
         comptesList.add(compte);

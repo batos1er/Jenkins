@@ -3,7 +3,13 @@ package bank;
 public class Account {
     private int id;
     private double solde = 0;
-    private float taux;
+    private double taux;
+
+    public Account(int id, double solde, double taux) {
+        this.id = id;
+        this.solde = solde;
+        this.taux = taux;
+    }
 
     public int getId() {
         return id;
@@ -13,7 +19,7 @@ public class Account {
         return solde;
     }
 
-    public float getTaux() {
+    public double getTaux() {
         return taux;
     }
 

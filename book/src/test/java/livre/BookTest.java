@@ -8,7 +8,7 @@ import static org.testng.AssertJUnit.assertEquals;
 
 class BookTest {
 
-    @MethodSource
+    @Test
     public void BookTestGetter() {
         Book book = new Book("The Great Gatsby", "F. Scott Fitzgerald", "1925");
         assertEquals("The Great Gatsby", book.getTitre());
@@ -16,7 +16,7 @@ class BookTest {
         assertEquals("1925", book.getDate());
     }
 
-    @MethodSource
+    @Test
     public void testSetters() {
         Book book = new Book("The Great Gatsby", "F. Scott Fitzgerald", "1925");
         book.setTitre("To Kill a Mockingbird");
