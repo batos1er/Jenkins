@@ -17,7 +17,7 @@ public class Bank {
     public void suppCompte(Account compte){
         comptesList.remove(compte);
     }
-    public double soldesTotal(){
+    public double soldesTotal(){//refaire pour afficher dans un sout chaque compte avec son solde
         double solde = 0;
         for (Account compte: comptesList) {
             solde += compte.getSolde();
