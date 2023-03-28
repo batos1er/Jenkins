@@ -9,7 +9,7 @@ import static org.testng.AssertJUnit.assertEquals;
 class BookTest {
 
     @Test
-    public void BookTestGetter() {
+    void BookTestGetter() {
         Book book = new Book("The Great Gatsby", "F. Scott Fitzgerald", "1925");
         assertEquals("The Great Gatsby", book.getTitre());
         assertEquals("F. Scott Fitzgerald", book.getAuteur());
@@ -17,7 +17,7 @@ class BookTest {
     }
 
     @Test
-    public void testSetters() {
+    void testSetters() {
         Book book = new Book("The Great Gatsby", "F. Scott Fitzgerald", "1925");
         book.setTitre("To Kill a Mockingbird");
         book.setAuteur("Harper Lee");

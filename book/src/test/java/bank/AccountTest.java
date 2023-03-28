@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class AccountTest {
 
     @Test
-    public void TestGetter() {
+    void TestGetter() {
         Account compte = new Account(2, 20, 2.3);
         assertEquals(2, compte.getId());
         assertEquals(20, compte.getSolde());
