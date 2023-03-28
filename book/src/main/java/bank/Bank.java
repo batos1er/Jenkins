@@ -21,5 +21,7 @@ public class Bank {
         }
         return solde;
     }
-    public double
+    public void transfertDeuxComptes(Account c1, Account c2, int somme){
+        c1.transfert(c2, somme);
+    }
 }
