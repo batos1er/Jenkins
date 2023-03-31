@@ -36,10 +36,10 @@ public class Delivery {
             return (float) (12+(this.distance-50)*0.5);
         }
         else if(this.distance <= 50 && this.poidsCargaison > 10 && this.poidsCargaison < 25){
-            return (float) 12;
+            return 12;
         }
         else if (this.distance <= 50 && this.poidsCargaison > 25) {
-            return (float) 15;
+            return 15;
         }
         else{
             return (float) (15+(this.distance-50)*0.5);
